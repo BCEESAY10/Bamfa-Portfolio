@@ -15,6 +15,11 @@
 html {
     scroll-behavior: smooth;
   }
+
+.bamfa{
+  color: rgba(10, 25, 200);
+  font-family: Tahoma, sans-serif
+}
   
 @keyframes blob {
   0% {

@@ -18,40 +18,49 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "Modern portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and responsive design.",
-      image: "/Bamfa.jpg",
+      image: "/images/Bamfa_PP.png",
       tags: ["frontend"],
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      githubLink: "https://github.com/BCEESAY10/bamfa-portfolio",
       featured: true
     },
     {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with user authentication, product management, and payment integration.",
-      image: "/Bamfa.jpg",
-      tags: ["fullstack"],
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
-      featured: true
-    },
-    {
-      title: "Task Management API",
-      description: "RESTful API for task management with user roles, task assignment, and email notifications.",
-      image: "/Bamfa.jpg",
-      tags: ["backend"],
-      tech: ["Node.js", "Express", "PostgreSQL"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Real-time weather dashboard with location-based forecasts and interactive maps.",
-      image: "/Bamfa.jpg",
+      title: "Munaff Website",
+      description: "A static website for Minaff dental clinic, built with HTML, Tailwind CSS, and JavaScript.",
+      image: "/images/Bamfa_PP.png",
       tags: ["frontend"],
-      tech: ["React", "OpenWeather API", "Mapbox"],
+      tech: ["HTML", "Tailwind", "JavaScript"],
       liveLink: "https://example.com",
-      githubLink: "https://github.com",
+      githubLink: "https://github.com/BCEESAY10/munaff-website",
+      featured: true
+    },
+    {
+      title: "Chatbot API",
+      description: "API for a chatbot application that uses Gemini API for natural language processing.",
+      image: "/images/Bamfa_PP.png",
+      tags: ["backend"],
+      tech: ["Node.js", "Express", "PostgreSQL", "Gemini API","JWT", "Axios"],
+      liveLink: "https://example.com",
+      githubLink: "https://github.com/BCEESAY10/chatbot-api",
+    },
+    {
+      title: "Product Catalog",
+      description: "A product catalog application built with React with search and filter functionality.",
+      image: "/images/Bamfa_PP.png",
+      tags: ["frontend"],
+      tech: ["React", "Tailwind"],
+      liveLink: "https://example.com",
+      githubLink: "https://github.com/BCEESAY10/product-catalog",
+    },
+    {
+      title: "Chatbot",
+      description: "A simple chatbot application built with Next js and Gemini API for natural language processing.",
+      image: "/images/Bamfa_PP.png",
+      tags: ["fullstack"],
+      tech: ["Next Js", "Tailwind", "Gemini API", "Axios", "PostgreSQL", "Drizzle"],
+      liveLink: "https://example.com",
+      githubLink: "https://github.com/BCEESAY10/next-project",
     }
   ]
 
@@ -83,7 +92,7 @@ export default function Projects() {
             Featured Projects
           </h1>
           <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
             A collection of projects that showcase my skills in frontend, backend, and full-stack development.
             Each project represents a unique challenge and solution.
           </p>

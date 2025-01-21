@@ -1,9 +1,8 @@
-// app/page.js
 'use client'
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
-import Bamfa from '@/public/images/Bamfa_PP.png'
+
 
 export default function Home() {
   const typedRef = useRef(null)
@@ -12,7 +11,7 @@ export default function Home() {
     const typed = new Typed(typedRef.current, {
       strings: [
         'Frontend Developer',
-        'UI/UX Enthusiast',
+        'Data Enthusiast',
         'Web Designer',
         'Creative Coder'
       ],
@@ -26,7 +25,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-8 lg:px-16 py-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-8 md:mx-12 lg:px-16 py-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       {/* Left Content Section */}
       <motion.div 
         initial={{ opacity: 0, x: -50 }}
@@ -40,11 +39,11 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="space-y-3"
         >
-          <h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
-            Hello, I'm
+          <h2 className="text-lg md:text-2xl text-gray-600 dark:text-gray-300">
+            Hello, I am
           </h2>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
-            Bamfa Ceesay
+          <h1 className="bamfa text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
+            BAMFA CEESAY 
           </h1>
           <div className="text-xl md:text-2xl text-primary font-semibold">
             I'm a <span ref={typedRef}></span>
@@ -70,13 +69,13 @@ export default function Home() {
         >
           <a 
             href="/projects" 
-            className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-3 bg-primary hover:bg-primary/90 hover:font-semibold text-white rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
             View My Work
           </a>
           <a 
             href="/contact" 
-            className="px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-white border-2 border-gray-200 dark:border-gray-700 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 hover:font-semibold dark:hover:bg-gray-700 text-gray-800 dark:text-white border-2 border-gray-200 dark:border-gray-700 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Contact Me
           </a>
@@ -104,7 +103,7 @@ export default function Home() {
           >
             <div className="relative w-full pt-[100%] rounded-full overflow-hidden shadow-2xl">
               <img
-                src={Bamfa}
+                src="/images/Bamfa_PP.png"
                 alt="Bamfa Ceesay"
                 className="absolute inset-0 w-full h-full object-cover"
               />

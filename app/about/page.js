@@ -2,7 +2,6 @@
 'use client'
 import { motion } from 'framer-motion'
 import { Code2, Rocket, Brain, Clock } from 'lucide-react'
-import Bamfa from '@/public/images/Bamfa.jpg'
 
 export default function About() {
   const qualities = [
@@ -65,7 +64,7 @@ export default function About() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
-                src={Bamfa}
+                src="/images/Bamfa.jpg"
                 alt="Bamfa Ceesay"
                 className="w-full h-auto"
               />
@@ -102,7 +101,7 @@ export default function About() {
             <div className="pt-6">
               <a 
                 href="/contact" 
-                className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
+                className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 hover:font-semibold text-white rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
                 Let's Connect
               </a>

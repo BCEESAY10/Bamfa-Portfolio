@@ -10,7 +10,9 @@ import {
   GitBranch, 
   MessagesSquare,
   Workflow,
-  Brain
+  Brain,
+  Paintbrush, 
+  FileText
 } from 'lucide-react'
 
 export default function Skills() {
@@ -82,6 +84,16 @@ export default function Skills() {
           name: "Git & GitHub",
           icon: <GitBranch className="w-5 h-5" />,
           description: "Version control and collaborative development"
+        },
+        { 
+          name: "MySQL",
+          icon: <Database className="w-5 h-5" />,
+          description: "Open-source relational database management system"
+        },
+        { 
+          name: "PostgreSQL",
+          icon: <Database className="w-5 h-5" />,
+          description: "Object-relational database system"
         }
       ]
     },
@@ -98,6 +110,16 @@ export default function Skills() {
           name: "Workflow Diagrams",
           icon: <Workflow className="w-5 h-5" />,
           description: "Process modeling and system documentation"
+        },
+        { 
+          name: "Figma & Canva",
+          icon: <Paintbrush className="w-5 h-5" />,
+          description: "Wireframing, prototyping, and graphic design"
+        },
+        { 
+          name: "Microsoft Suite",
+          icon: <FileText className="w-5 h-5" />,
+          description: "Word, Excel and Powerpoint"
         }
       ]
     }
@@ -136,7 +158,7 @@ export default function Skills() {
             Technical Expertise
           </h1>
           <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
             A collection of technologies and tools I use to bring ideas to life. 
             Each skill represents hands-on experience in real-world projects.
           </p>
@@ -147,7 +169,7 @@ export default function Skills() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center md:text-xl gap-4 mb-12"
         >
           <motion.button
             variants={itemVariants}

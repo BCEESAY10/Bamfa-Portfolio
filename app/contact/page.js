@@ -18,21 +18,21 @@ export default function Contact() {
       name: "Gmail",
       icon: <Mail className="w-8 h-8" />,
       link: "mailto:bamfaceesay30@gmail.com",
-      color: "hover:bg-red-500",
+      color: "hover:bg-yellow-500",
       description: "Send me an email"
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-8 h-8" />,
-      link: "#", // Replace with your LinkedIn URL
+      link: "https://www.linkedin.com/in/bamfa-ceesay-b581042b4/",
       color: "hover:bg-blue-600",
       description: "Connect professionally"
     },
     {
       name: "Facebook",
       icon: <Facebook className="w-8 h-8" />,
-      link: "#", // Replace with your Facebook URL
-      color: "hover:bg-blue-500",
+      link: "https://www.facebook.com/alhagieomarbamfa.ceesay", 
+      color: "hover:bg-blue-800",
       description: "Follow me on Facebook"
     },
     {
@@ -63,7 +63,7 @@ export default function Contact() {
               Let's Connect
             </h1>
             <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
               Feel free to reach out through any of these platforms. I'm always open to discussing new projects, 
               creative ideas, or opportunities to be part of your visions.
             </p>
