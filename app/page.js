@@ -56,7 +56,7 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-gray-600 dark:text-gray-300 text-lg max-w-xl mx-auto md:mx-0"
         >
-          An aspiring software developer fascinated by frontend development 
+          A Product Engineer and an aspiring software developer fascinated by frontend development 
           and beautiful designs. I transform ideas into elegant, 
           user-friendly digital experiences.
         </motion.p>
