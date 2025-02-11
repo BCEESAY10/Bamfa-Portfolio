@@ -28,7 +28,7 @@ export default function About() {
   ]
 
   return (
-    <div className="min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ export default function About() {
         className="max-w-6xl mx-auto"
       >
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="w-20 h-1 bg-primary mx-auto mb-8"
+            className="w-20 h-1 bg-primary mx-auto mb-6"
           />
         </div>
 
@@ -66,7 +66,7 @@ export default function About() {
               <img
                 src="/images/Bamfa.jpg"
                 alt="Bamfa Ceesay"
-                className="w-full h-auto"
+                className="w-full h-auto md:h-[400px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
             </div>
@@ -81,24 +81,17 @@ export default function About() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-bold text-gray-800 dark:text-white">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-800 dark:text-white">
               Crafting Digital Experiences with Passion
             </h2>
             
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-              Hello! I'm Bamfa Ceesay, a Product Engineer with a Computer Science background and an 
-              unwavering passion for frontend development. My journey in tech is driven by a deep 
-              fascination with creating beautiful, intuitive digital experiences that make a difference.
-            </p>
-            
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-              In my role as a Product Engineer, I blend technical expertise with creative problem-solving 
-              to develop solutions that not only meet technical requirements but also delight users. 
-              My approach combines analytical thinking with an eye for design, ensuring that every 
-              project I touch is both functional and aesthetically pleasing.
+              Hello! I'm Bamfa Ceesay, a trained Product Engineer with a Computer Science background and an 
+              unwavering passion for software development. My journey in tech is driven by a deep 
+              fascination with creating beautiful, intuitive digital experiences that make a difference. 
             </p>
 
-            <div className="pt-6">
+            <div className="pt-4">
               <a 
                 href="/contact" 
                 className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 hover:font-semibold text-white rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
@@ -114,7 +107,7 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 md:mb-24"
         >
           {qualities.map((quality, index) => (
             <motion.div
