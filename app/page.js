@@ -10,10 +10,10 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        'Frontend Developer',
-        'Data Enthusiast',
-        'Web Designer',
-        'Creative Coder'
+        'Frontend Dev',
+        'Product Engineer',
+        'Software Dev',
+        'Graphic Designer'
       ],
       typeSpeed: 50,
       backSpeed: 30,
