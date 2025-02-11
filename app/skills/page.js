@@ -142,7 +142,7 @@ export default function Skills() {
   }
 
   return (
-    <div className="min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen py-10 px-4 md:px-8 lg:px-16 md:mb-36 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -152,24 +152,37 @@ export default function Skills() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
-            Technical Expertise
+            Skills
           </h1>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-4"/>
           <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
             A collection of technologies and tools I use to bring ideas to life. 
-            Each skill represents hands-on experience in real-world projects.
           </p>
         </motion.div>
+
+         {/* Mobile Dropdown */}
+      <div className="md:hidden mb-6">
+        <select
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-white"
+          value={activeTab}
+          onChange={(e) => setActiveTab(e.target.value)}
+        >
+          <option value="all">All Skills</option>
+          {Object.entries(skillCategories).map(([key, { title }]) => (
+            <option key={key} value={key}>{title}</option>
+          ))}
+        </select>
+      </div>
 
         {/* Category Tabs */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap justify-center md:text-xl gap-4 mb-12"
+          className="hidden md:flex flex-wrap justify-center md:text-xl md:gap-4 mb-6"
         >
           <motion.button
             variants={itemVariants}
