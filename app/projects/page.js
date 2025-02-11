@@ -1,15 +1,15 @@
 // app/projects/page.js
 'use client'
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Github, 
   ExternalLink, 
   Code2, 
   Layout,
   Server
-} from 'lucide-react'
-import Image from 'next/image'
+} from 'lucide-react';
+import Image from 'next/image';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -76,7 +76,7 @@ export default function Projects() {
     : projects.filter(project => project.tags.includes(activeFilter))
 
   return (
-    <div className="min-h-screen py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -86,20 +86,19 @@ export default function Projects() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-8"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
             Featured Projects
           </h1>
-          <div className="w-20 h-1 bg-primary mx-auto mb-8" />
+          <div className="w-20 h-1 bg-primary mx-auto mb-6" />
           <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
             A collection of projects that showcase my skills in frontend, backend, and full-stack development.
-            Each project represents a unique challenge and solution.
           </p>
         </motion.div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center mb-12">
           {filters.map((filter) => (
             <button
               key={filter.id}
@@ -119,7 +118,7 @@ export default function Projects() {
         {/* Projects Grid */}
         <AnimatePresence mode="wait">
           <motion.div 
-            className="grid md:grid-cols-2 gap-8"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:mb-24"
             layout
           >
             {filteredProjects.map((project) => (
@@ -132,7 +131,7 @@ export default function Projects() {
                 className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Project Image */}
-                <div className="relative h-48 md:h-64 overflow-hidden">
+                <div className="relative h-36 md:h-52 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
