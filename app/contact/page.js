@@ -1,15 +1,16 @@
 // app/contact/page.js
 'use client'
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, Facebook, MessageCircle } from 'lucide-react'
+import { Mail, Github, Linkedin, Facebook } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Contact() {
-  const currentYear = new Date().getFullYear()
+  //const currentYear = new Date().getFullYear()
 
   const contacts = [
     {
       name: "WhatsApp",
-      icon: <MessageCircle className="w-8 h-8" />,
+      icon: <FaWhatsapp className="w-8 h-8" />,
       link: "https://wa.me/2207109836",
       color: "hover:bg-green-500",
       description: "Quick chat on WhatsApp"
