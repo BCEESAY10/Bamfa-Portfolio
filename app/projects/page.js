@@ -38,7 +38,7 @@ export default function Projects() {
     {
       title: "Chatbot API",
       description: "API for a chatbot application that uses Gemini API for natural language processing.",
-      image: "/images/Bamfa_PP.png",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fform.io%2Fthe-simplest-explanation-of-backend-api-integration-ever%2F&psig=AOvVaw0lkkwNrJZynBW9xnl9s4Wr&ust=1741450722982000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjZldSv-IsDFQAAAAAdAAAAABAE",
       tags: ["backend"],
       tech: ["Node.js", "Express", "PostgreSQL", "Gemini API","JWT", "Axios"],
       liveLink: "https://example.com",
@@ -47,10 +47,10 @@ export default function Projects() {
     {
       title: "Product Catalog",
       description: "A product catalog application built with React with search and filter functionality.",
-      image: "/images/Bamfa_PP.png",
+      image: "/images/product_catalog.png",
       tags: ["frontend"],
       tech: ["React", "Tailwind"],
-      liveLink: "https://example.com",
+      liveLink: "https://product-catalogue-b326.onrender.com",
       githubLink: "https://github.com/BCEESAY10/product-catalog",
     },
     {
@@ -59,8 +59,8 @@ export default function Projects() {
       image: "/images/Bamfa_PP.png",
       tags: ["fullstack"],
       tech: ["Next Js", "Tailwind", "Gemini API", "Axios", "PostgreSQL", "Drizzle"],
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/BCEESAY10/next-project",
+      liveLink: "chatbottutorial.vercel.app",
+      githubLink: "https://github.com/BCEESAY10/First-Next-Supabase-Project",
     }
   ]
 
