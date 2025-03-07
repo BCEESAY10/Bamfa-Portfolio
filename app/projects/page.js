@@ -136,7 +136,7 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-contain transition-transform duration-300 hover:scale-105"
                   />
                   {project.featured && (
                     <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
