@@ -18,20 +18,20 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "Modern portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and responsive design.",
-      image: "/images/Bamfa_PP.png",
+      image: "/images/portfolio.png",
       tags: ["frontend"],
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      liveLink: "https://example.com",
+      liveLink: "bamfa-portfolio.vercel.app",
       githubLink: "https://github.com/BCEESAY10/bamfa-portfolio",
       featured: true
     },
     {
       title: "Munaff Website",
       description: "A static website for Minaff dental clinic, built with HTML, Tailwind CSS, and JavaScript.",
-      image: "/images/Bamfa_PP.png",
+      image: "/images/munaff_homepage.png",
       tags: ["frontend"],
       tech: ["HTML", "Tailwind", "JavaScript"],
-      liveLink: "https://example.com",
+      liveLink: "https://munaffdentalclinic.com",
       githubLink: "https://github.com/BCEESAY10/munaff-website",
       featured: true
     },
