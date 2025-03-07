@@ -38,7 +38,7 @@ export default function Projects() {
     {
       title: "Chatbot API",
       description: "API for a chatbot application that uses Gemini API for natural language processing.",
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fform.io%2Fthe-simplest-explanation-of-backend-api-integration-ever%2F&psig=AOvVaw0lkkwNrJZynBW9xnl9s4Wr&ust=1741450722982000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjZldSv-IsDFQAAAAAdAAAAABAE",
+      image: "https://form.io/wp-content/uploads/thumbnail-formio-backend-api-integration.webp",
       tags: ["backend"],
       tech: ["Node.js", "Express", "PostgreSQL", "Gemini API","JWT", "Axios"],
       liveLink: "#",
