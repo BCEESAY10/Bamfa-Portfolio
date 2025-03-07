@@ -21,7 +21,7 @@ export default function Projects() {
       image: "/images/portfolio.png",
       tags: ["frontend"],
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      liveLink: "bamfa-portfolio.vercel.app",
+      liveLink: "https://bamfa-portfolio.vercel.app",
       githubLink: "https://github.com/BCEESAY10/bamfa-portfolio",
       featured: true
     },
@@ -41,7 +41,7 @@ export default function Projects() {
       image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fform.io%2Fthe-simplest-explanation-of-backend-api-integration-ever%2F&psig=AOvVaw0lkkwNrJZynBW9xnl9s4Wr&ust=1741450722982000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjZldSv-IsDFQAAAAAdAAAAABAE",
       tags: ["backend"],
       tech: ["Node.js", "Express", "PostgreSQL", "Gemini API","JWT", "Axios"],
-      liveLink: "https://example.com",
+      liveLink: "#",
       githubLink: "https://github.com/BCEESAY10/chatbot-api",
     },
     {
@@ -59,7 +59,7 @@ export default function Projects() {
       image: "/images/Bamfa_PP.png",
       tags: ["fullstack"],
       tech: ["Next Js", "Tailwind", "Gemini API", "Axios", "PostgreSQL", "Drizzle"],
-      liveLink: "chatbottutorial.vercel.app",
+      liveLink: "https://chatbottutorial.vercel.app",
       githubLink: "https://github.com/BCEESAY10/First-Next-Supabase-Project",
     }
   ]
