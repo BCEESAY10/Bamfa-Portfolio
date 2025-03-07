@@ -62,6 +62,25 @@ export default function Projects() {
       liveLink: "https://chatbottutorial.vercel.app",
       githubLink: "https://github.com/BCEESAY10/First-Next-Supabase-Project",
     }
+    ,
+    {
+      title: "Task Manager",
+      description: "A simple task manager web app that allows users to perform CRUD operations.",
+      image: "/images/Bamfa_PP.png",
+      tags: ["fullstack"],
+      tech: ["React", "Tailwind", "Python3", "Flask-API", "PostgreSQL", "Drizzle"],
+      liveLink: "https://task-manager-frontend-mxft.onrender.com",
+      githubLink: "https://github.com/BCEESAY10/task-manager-frontend",
+    },
+    {
+      title: "Patients Record System",
+      description: "A patients record management system build for Munaff Clinic to keep bio data and clinic transactions of patients.",
+      image: "/images/patients.png",
+      tags: ["fullstack"],
+      tech: ["React", "Tailwind", "Mysql"],
+      liveLink: "https://patients-record-system-ui-1.onrender.com/",
+      githubLink: "https://github.com/BCEESAY10/patients-record-system-ui",
+    }
   ]
 
   const filters = [
