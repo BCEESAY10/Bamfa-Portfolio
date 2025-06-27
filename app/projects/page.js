@@ -212,15 +212,10 @@ export default function Projects() {
                       </div>
                     )}
                   </div>
-                  {project.featured && (
-                    <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
-                      Featured
-                    </div>
-                  )}
                 </div>
 
                 {/* Project Info */}
-                <div className="p-6 pt-0">
+                <div className="p-6 pt-3">
                   <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
                     {project.title}
                   </h3>
