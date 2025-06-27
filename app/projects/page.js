@@ -20,7 +20,7 @@ import {
   Users,
   Monitor,
 } from "lucide-react";
-import Image from "next/image";
+
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
