@@ -203,8 +203,8 @@ export default function Projects() {
                 exit={{ opacity: 0, y: 20 }}
                 className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 {/* Project Image */}
-                <div className="relative h-36 md:h-52 overflow-hidden">
-                  <div className="relative flex items-center justify-center h-36 md:h-52">
+                <div className="relative h-auto overflow-hidden">
+                  <div className="relative flex items-center justify-center">
                     {project.icon}
                     {project.featured && (
                       <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
