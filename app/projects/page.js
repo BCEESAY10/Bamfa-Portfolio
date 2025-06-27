@@ -67,7 +67,7 @@ export default function Projects() {
     {
       title: "Product Catalog",
       description: "A product catalog application built with React with search and filter functionality.",
-      image: "/images/product_catalog.png",
+      icon: <ShoppingCart className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
       tech: ["React", "Tailwind"],
       liveLink: "https://product-catalogue-b326.onrender.com",
@@ -76,7 +76,7 @@ export default function Projects() {
     {
       title: "Chatbot",
       description: "A simple chatbot application built with Next js and Gemini API for natural language processing.",
-      image: "/images/Bamfa_PP.png",
+      icon: <MessageCircle className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["Next Js", "Tailwind", "Gemini API", "Axios", "PostgreSQL", "Drizzle"],
       liveLink: "https://chatbottutorial.vercel.app",
@@ -86,7 +86,7 @@ export default function Projects() {
     {
       title: "Task Manager",
       description: "A simple task manager web app that allows users to perform CRUD operations.",
-      image: "/images/Bamfa_PP.png",
+      icon: <CheckSquare className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["React", "Tailwind", "Python3", "Flask-API", "PostgreSQL", "Drizzle"],
       liveLink: "https://task-manager-frontend-mxft.onrender.com",
@@ -95,9 +95,9 @@ export default function Projects() {
     {
       title: "Patients Record System",
       description: "A patients record management system build for Munaff Clinic to keep bio data and clinic transactions of patients.",
-      image: "/images/patients.png",
+      icon: <ClipboardList className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
-      tech: ["React", "Tailwind", "Mysql"],
+      tech: ["React", "Tailwind", "Sequelize", "Node.js"],
       liveLink: "https://patients-record-system-ui-1.onrender.com/",
       githubLink: "https://github.com/BCEESAY10/patients-record-system-ui",
     }
