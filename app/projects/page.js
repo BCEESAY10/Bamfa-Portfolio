@@ -100,6 +100,7 @@ export default function Projects() {
       tech: ["React", "Tailwind", "Sequelize", "Node.js"],
       liveLink: "https://munaff-dental-system.com",
       githubLink: "https://github.com/BCEESAY10/dental-frontend",
+      featured: true
     },
     {
       title: "School Report Card Generation System",
