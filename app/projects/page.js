@@ -7,7 +7,17 @@ import {
   ExternalLink, 
   Code2, 
   Layout,
-  Server
+  Server,
+  Globe,
+  Bot,
+  ShoppingCart,
+  Boxes,
+  MessageCircle,
+  CheckSquare,
+  ListTodo,
+  ClipboardList,
+  Users,
+  Monitor
 } from 'lucide-react';
 import Image from 'next/image';
 
