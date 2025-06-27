@@ -16,7 +16,7 @@ import {
   CheckSquare,
   ListTodo,
   ClipboardList,
-  Teeth,
+  Hospital,
   Users,
   Monitor,
 } from "lucide-react";
@@ -117,7 +117,7 @@ export default function Projects() {
       title: "Patients Record System",
       description:
         "A patients record management system build for Munaff Clinic to keep bio data and clinic transactions of patients.",
-      icon: <Teeth className="w-16 h-16 mx-auto text-primary" />,
+      icon: <Hospital className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["React", "Tailwind", "Sequelize", "Node.js"],
       liveLink: "https://munaff-dental-system.com",
