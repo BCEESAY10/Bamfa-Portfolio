@@ -28,7 +28,7 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "Modern portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and responsive design.",
-      image: "/images/portfolio.png",
+      icon: <Monitor className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
       tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
       liveLink: "https://bamfa-portfolio.vercel.app",
@@ -38,7 +38,7 @@ export default function Projects() {
     {
       title: "Munaff Website",
       description: "A static website for Minaff dental clinic, built with HTML, Tailwind CSS, and JavaScript.",
-      image: "/images/munaff_homepage.png",
+      icon: <Globe className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
       tech: ["HTML", "Tailwind", "JavaScript"],
       liveLink: "https://munaffdentalclinic.com",
@@ -46,9 +46,19 @@ export default function Projects() {
       featured: true
     },
     {
+      title: "Growing Seeds Schools Website",
+      description: "A static website for Growing Seeds Schools, built with React + vite, and Tailwind CSS",
+      icon: <Globe className="w-16 h-16 mx-auto text-primary" />,
+      tags: ["frontend"],
+      tech: ["React", "Tailwind"],
+      liveLink: "https://growing-seeds.vercel.app",
+      githubLink: "https://github.com/BCEESAY10/growing-seeds-website",
+      featured: true
+    },
+    {
       title: "Chatbot API",
       description: "API for a chatbot application that uses Gemini API for natural language processing.",
-      image: "/images/api.png",
+      icon: <Bot className="w-16 h-16 mx-auto text-primary" />,
       tags: ["backend"],
       tech: ["Node.js", "Express", "PostgreSQL", "Gemini API","JWT", "Axios"],
       liveLink: "#",
