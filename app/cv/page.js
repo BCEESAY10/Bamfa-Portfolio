@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CVPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-auto">
       {/* CV Section */}
       <div className="py-10 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
         <motion.div
@@ -23,7 +23,7 @@ export default function CVPage() {
             </h1>
             <div className="w-20 h-1 bg-primary mx-auto mb-8" />
             <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
-              Here you can view my up-to-date CV. For more details about my experience and skills, feel free to explore the rest of my portfolio.
+              Here you can view my up-to-date CV. 
             </p>
           </motion.div>
 
