@@ -16,6 +16,7 @@ const Navbar = () => {
     { label: 'Skills', href: '/skills' },
     { label: 'Projects', href: '/projects' },
     { label: 'Contact', href: '/contact' },
+    { label: 'My CV', href: '/cv' },
   ]
 
   useEffect(() => {
