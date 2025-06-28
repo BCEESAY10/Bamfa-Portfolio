@@ -86,8 +86,7 @@ export default function About() {
             </h2>
             
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-              Hello! I'm Bamfa Ceesay, a trained Product Engineer with a Computer Science background and an 
-              unwavering passion for software development. My journey in tech is driven by a deep 
+              Hello! I'm Bamfa Ceesay, a trained Product Engineer and an Aspiring Software developer. I earned a BSc in computer science from the University of The Gambia in 2025. My journey in tech is driven by a deep 
               fascination with creating beautiful, intuitive digital experiences that make a difference. 
             </p>
 
