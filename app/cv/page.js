@@ -1,26 +1,50 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function CVPage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 py-12 px-4">
-      <h1 className="text-4xl font-bold mb-6 text-primary text-center">My CV</h1>
-      {/* <div className="mb-8">
-        <a
-          href="/Bamfa_CV-June_2025.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-primary/90 transition"
+    <div className="min-h-screen">
+      {/* CV Section */}
+      <div className="py-10 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="max-w-6xl mx-auto"
         >
-          Download CV (PDF)
-        </a>
-      </div> */}
-      <div className="w-full max-w-4xl aspect-[8.5/11] shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-900">
-        <iframe
-          src="/Bamfa_CV-June_2025.pdf"
-          title="CV PDF"
-          className="w-full h-[80vh] min-h-[500px] border-0"
-        />
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-center mb-16"
+          >
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-6">
+              My CV
+            </h1>
+            <div className="w-20 h-1 bg-primary mx-auto mb-8" />
+            <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
+              Here you can view my up-to-date curriculum vitae. For more details about my experience and skills, feel free to explore the rest of my portfolio.
+            </p>
+          </motion.div>
+
+          {/* CV PDF Viewer */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="w-full max-w-4xl aspect-[8.5/11] shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-900 mx-auto"
+          >
+            <iframe
+              src="/Bamfa_CV-June_2025.pdf"
+              title="CV PDF"
+              className="w-full h-[80vh] min-h-[500px] border-0"
+            />
+          </motion.div>
+        </motion.div>
       </div>
+
+      {/* Decorative Elements */}
+      <div className="fixed -z-10 top-1/4 right-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob" />
+      <div className="fixed -z-10 bottom-1/4 left-0 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-4000" />
     </div>
   );
 }
