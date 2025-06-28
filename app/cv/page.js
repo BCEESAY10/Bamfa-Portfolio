@@ -23,7 +23,7 @@ export default function CVPage() {
             </h1>
             <div className="w-20 h-1 bg-primary mx-auto mb-8" />
             <p className="text-gray-600 dark:text-gray-300 md:text-xl max-w-2xl mx-auto">
-              Here you can view my up-to-date curriculum vitae. For more details about my experience and skills, feel free to explore the rest of my portfolio.
+              Here you can view my up-to-date CV. For more details about my experience and skills, feel free to explore the rest of my portfolio.
             </p>
           </motion.div>
 
