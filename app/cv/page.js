@@ -31,7 +31,7 @@ export default function CVPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="w-full max-w-4xl aspect-[8.5/11] shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-900 mx-auto"
+            className="w-full max-w-4xl shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-900 mx-auto"
           >
             <iframe
               src="/Bamfa_CV-June_2025.pdf"
