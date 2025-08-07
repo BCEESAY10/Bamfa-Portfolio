@@ -3,6 +3,12 @@ import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Typed from 'typed.js'
 
+import About from './about/page'
+import Projects from './projects/page'
+import Skills from './skills/page'
+import Contact from './contact/page'
+import CVPage from './cv/page'
+
 
 export default function Home() {
   const typedRef = useRef(null)
