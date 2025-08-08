@@ -112,10 +112,6 @@ export default function Home() {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* Background Decorations */}
-        <div className="absolute top-20 left-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
-        <div className="absolute top-40 right-0 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
       </div>
 
       <div className="w-full mt-20 space-y-20">
@@ -124,6 +120,9 @@ export default function Home() {
         <Projects />
         <CVPage />
         <Contact />
+        {/* Background Decorations */}
+        <div className="absolute top-20 left-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
+        <div className="absolute top-40 right-0 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
       </div>
     </>
   );
