@@ -121,6 +121,14 @@ export default function Home() {
         </div>
       </motion.div>
 
+      <div className="w-full mt-20 space-y-20">
+        <About />
+        <Skills/>
+        <Projects />
+        <CVPage />
+        <Contact />
+      </div>
+
       {/* Background Decorations */}
       <div className="absolute top-20 left-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
       <div className="absolute top-40 right-0 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
