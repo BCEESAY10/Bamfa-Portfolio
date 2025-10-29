@@ -99,7 +99,7 @@ export default function Skills() {
         {
           name: "Sequelize",
           icon: <Database className="w-5 h-5" />,
-          description: "Promise-based Node.js ORm for MySQL",
+          description: "Promise-based Node.js ORM for MySQL",
         },
       ],
     },
