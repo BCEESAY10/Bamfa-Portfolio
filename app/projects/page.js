@@ -1,4 +1,3 @@
-// app/projects/page.js
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -20,7 +19,6 @@ import {
   Users,
   Monitor,
 } from "lucide-react";
-
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
