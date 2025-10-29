@@ -2,7 +2,7 @@
   <defs>
     <style>
       :root {
-        --bg-color: #2563eb;
+        --bg-color: #6495ed;
         --text-color: #ffffff;
       }
     </style>
