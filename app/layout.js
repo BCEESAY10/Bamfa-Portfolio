@@ -9,7 +9,7 @@ export const metadata = {
   title: "Bamfa's Portfolio",
   description: "Professional portfolio website",
   icons: {
-    icon: "/bc-icon.svg",
+    icon: "./bc-icon.svg",
   },
 };
 
