@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-8 md:mx-12 lg:px-16 py-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 pt-0 md:px-8 md:mx-12 lg:px-16 py-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
         {/* Left Content Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
