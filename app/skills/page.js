@@ -38,6 +38,12 @@ export default function Skills() {
           icon: <Code2 className="w-5 h-5" />,
           description: "Server-side rendering and static site generation",
         },
+        {
+          name: "React Native & Expo",
+          icon: <Code2 className="w-5 h-5" />,
+          description:
+            "Building cross-platform mobile apps using React Native and Expo",
+        },
       ],
     },
     backend: {
