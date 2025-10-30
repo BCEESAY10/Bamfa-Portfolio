@@ -46,7 +46,7 @@ export default function Projects() {
         "A static website for Minaff dental clinic, built with HTML, Tailwind CSS, and JavaScript.",
       icon: <Globe className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
-      tech: ["HTML", "Tailwind", "JavaScript"],
+      tech: ["HTML", "Tailwind CSS", "JavaScript"],
       liveLink: "https://munaffdentalclinic.com",
       githubLink: "https://github.com/BCEESAY10/munaff-website",
       featured: true,
@@ -58,7 +58,7 @@ export default function Projects() {
         "A static website for Growing Seeds Schools, built with React + vite, and Tailwind CSS",
       icon: <Globe className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
-      tech: ["React", "Tailwind"],
+      tech: ["React", "Tailwind CSS", "Framer Motion"],
       liveLink: "https://growing-seeds.vercel.app",
       githubLink: "https://github.com/BCEESAY10/growing-seeds-website",
       featured: true,
@@ -70,7 +70,7 @@ export default function Projects() {
         "API for a chatbot application that uses Gemini API for natural language processing.",
       icon: <Bot className="w-16 h-16 mx-auto text-primary" />,
       tags: ["backend"],
-      tech: ["Node.js", "Express", "PostgreSQL", "Gemini API", "JWT", "Axios"],
+      tech: ["Node.js", "Express", "PostgreSQL", "Gemini API"],
       liveLink: "#",
       githubLink: "https://github.com/BCEESAY10/chatbot-api",
       isPrivate: true,
@@ -103,7 +103,7 @@ export default function Projects() {
     {
       title: "Product Catalog",
       description:
-        "A product catalog application built with React with search and filter functionality.",
+        "A product catalog application built with React with search and filter functionality (Frontend only).",
       icon: <ShoppingCart className="w-16 h-16 mx-auto text-primary" />,
       tags: ["frontend"],
       tech: ["React", "Tailwind"],
@@ -310,7 +310,7 @@ export default function Projects() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-xs">
+                        className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full text-xs">
                         {tech}
                       </span>
                     ))}
