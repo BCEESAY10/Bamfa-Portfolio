@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 
@@ -15,9 +16,9 @@ export default function Home() {
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
       strings: [
-        "Frontend Dev",
+        "Mobile Developer",
         "Product Engineer",
-        "Software Dev",
+        "Software Developer",
         "Graphic Designer",
       ],
       typeSpeed: 50,
@@ -31,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-8 md:mx-12 lg:px-16 py-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+      <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 py-0 md:px-8 md:mx-12 md:-mt-12 lg:px-16 bg-transparent dark:from-gray-900 dark:to-gray-800">
         {/* Left Content Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -50,10 +51,7 @@ export default function Home() {
               BAMFA CEESAY
             </h1>
             <div className="text-xl md:text-2xl text-primary font-semibold">
-              I'm a{" "}
-              <span
-                ref={typedRef}
-                className="inline-block max-w-full overflow-hidden whitespace-nowrap"></span>
+              I'm a <span ref={typedRef}></span>
             </div>
           </motion.div>
 
@@ -103,9 +101,10 @@ export default function Home() {
               }}
               className="w-full h-full">
               <div className="relative w-full pt-[100%] rounded-full overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/images/Bamfa_PP.png"
                   alt="Bamfa Ceesay"
+                  fill
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 {/* Decorative Elements */}
@@ -117,15 +116,15 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className="w-full mt-20 space-y-20">
+      <div className="w-full mt-20 space-y-0">
         <About />
         <Skills />
         <Projects />
         <CVPage />
         <Contact />
         {/* Background Decorations */}
-        <div className="absolute top-20 left-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
-        <div className="absolute top-40 right-0 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000"></div>
+        <div className="hidden lg:absolute top-20 left-0 w-42 h-42 md:w-72 md:h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob z-10"></div>
+        <div className="hidden lg:absolute top-40 right-0 w-42 h-42 md:w-72 md:h-72 bg-secondary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob animation-delay-2000 z-10"></div>
       </div>
     </>
   );

@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden fixed top-2 right-2 flex items-center z-50">
             <button
               onClick={toggleTheme}
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 mr-2"
@@ -108,7 +108,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden fixed w-[100%] transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900">

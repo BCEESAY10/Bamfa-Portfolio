@@ -10,13 +10,10 @@ import {
   Globe,
   Bot,
   ShoppingCart,
-  Boxes,
   MessageCircle,
   CheckSquare,
-  ListTodo,
   ClipboardList,
   Hospital,
-  Users,
   Monitor,
 } from "lucide-react";
 
@@ -151,7 +148,7 @@ export default function Projects() {
       : projects.filter((project) => project.tags.includes(activeFilter));
 
   return (
-    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-transparent dark:from-gray-900 dark:to-gray-800">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

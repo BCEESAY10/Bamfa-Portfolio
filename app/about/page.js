@@ -31,7 +31,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-transparent dark:from-gray-900 dark:to-gray-800">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
