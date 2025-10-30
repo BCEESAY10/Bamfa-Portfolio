@@ -15,10 +15,17 @@ import {
   ClipboardList,
   Hospital,
   Monitor,
+  Lock,
+  X,
+  Image as ImageIcon,
+  Eye,
 } from "lucide-react";
+import DemoModal from "@/components/modals/DemoModal";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   const projects = [
     {
@@ -31,6 +38,7 @@ export default function Projects() {
       liveLink: "https://bamfa-portfolio.vercel.app",
       githubLink: "https://github.com/BCEESAY10/bamfa-portfolio",
       featured: true,
+      isPrivate: false,
     },
     {
       title: "Munaff Website",
@@ -42,6 +50,7 @@ export default function Projects() {
       liveLink: "https://munaffdentalclinic.com",
       githubLink: "https://github.com/BCEESAY10/munaff-website",
       featured: true,
+      isPrivate: false,
     },
     {
       title: "Growing Seeds Schools Website",
@@ -53,6 +62,7 @@ export default function Projects() {
       liveLink: "https://growing-seeds.vercel.app",
       githubLink: "https://github.com/BCEESAY10/growing-seeds-website",
       featured: true,
+      isPrivate: true,
     },
     {
       title: "Chatbot API",
@@ -63,6 +73,32 @@ export default function Projects() {
       tech: ["Node.js", "Express", "PostgreSQL", "Gemini API", "JWT", "Axios"],
       liveLink: "#",
       githubLink: "https://github.com/BCEESAY10/chatbot-api",
+      isPrivate: true,
+      apiDemo: {
+        endpoints: [
+          {
+            method: "POST",
+            path: "/api/chat",
+            description: "Send message to chatbot",
+          },
+          {
+            method: "GET",
+            path: "/api/history",
+            description: "Get chat history",
+          },
+          {
+            method: "POST",
+            path: "/api/auth/login",
+            description: "User authentication",
+          },
+        ],
+        features: [
+          "Natural language processing with Gemini API",
+          "JWT-based authentication",
+          "PostgreSQL database for conversation storage",
+          "RESTful API architecture",
+        ],
+      },
     },
     {
       title: "Product Catalog",
@@ -73,41 +109,44 @@ export default function Projects() {
       tech: ["React", "Tailwind"],
       liveLink: "https://product-catalogue-b326.onrender.com",
       githubLink: "https://github.com/BCEESAY10/product-catalog",
+      isPrivate: false,
     },
-    {
-      title: "Chatbot",
-      description:
-        "A simple chatbot application built with Next js and Gemini API for natural language processing.",
-      icon: <MessageCircle className="w-16 h-16 mx-auto text-primary" />,
-      tags: ["fullstack"],
-      tech: [
-        "Next Js",
-        "Tailwind",
-        "Gemini API",
-        "Axios",
-        "PostgreSQL",
-        "Drizzle",
-      ],
-      liveLink: "https://chatbottutorial.vercel.app",
-      githubLink: "https://github.com/BCEESAY10/First-Next-Supabase-Project",
-    },
-    {
-      title: "Task Manager",
-      description:
-        "A simple task manager web app that allows users to perform CRUD operations.",
-      icon: <CheckSquare className="w-16 h-16 mx-auto text-primary" />,
-      tags: ["fullstack"],
-      tech: [
-        "React",
-        "Tailwind",
-        "Python3",
-        "Flask-API",
-        "PostgreSQL",
-        "Drizzle",
-      ],
-      liveLink: "https://task-manager-frontend-mxft.onrender.com",
-      githubLink: "https://github.com/BCEESAY10/task-manager-frontend",
-    },
+    // {
+    //   title: "Chatbot",
+    //   description:
+    //     "A simple chatbot application built with Next js and Gemini API for natural language processing.",
+    //   icon: <MessageCircle className="w-16 h-16 mx-auto text-primary" />,
+    //   tags: ["fullstack"],
+    //   tech: [
+    //     "Next Js",
+    //     "Tailwind",
+    //     "Gemini API",
+    //     "Axios",
+    //     "PostgreSQL",
+    //     "Drizzle",
+    //   ],
+    //   liveLink: "https://chatbottutorial.vercel.app",
+    //   githubLink: "https://github.com/BCEESAY10/First-Next-Supabase-Project",
+    //   isPrivate: false,
+    // },
+    // {
+    //   title: "Task Manager",
+    //   description:
+    //     "A simple task manager web app that allows users to perform CRUD operations.",
+    //   icon: <CheckSquare className="w-16 h-16 mx-auto text-primary" />,
+    //   tags: ["fullstack"],
+    //   tech: [
+    //     "React",
+    //     "Tailwind",
+    //     "Python3",
+    //     "Flask-API",
+    //     "PostgreSQL",
+    //     "Drizzle",
+    //   ],
+    //   liveLink: "https://task-manager-frontend-mxft.onrender.com",
+    //   githubLink: "https://github.com/BCEESAY10/task-manager-frontend",
+    //   isPrivate: false,
+    // },
     {
       title: "Patients Record System",
       description:
@@ -115,9 +154,15 @@ export default function Projects() {
       icon: <Hospital className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["React", "Tailwind", "Sequelize", "Node.js"],
-      liveLink: "https://munaff-dental-system.com",
-      githubLink: "https://github.com/BCEESAY10/dental-frontend",
+      liveLink: "#",
+      githubLink: "#",
       featured: true,
+      isPrivate: true,
+      screenshots: [
+        "https://placehold.co/800x600/667eea/ffffff?text=Dashboard+View",
+        "https://placehold.co/800x600/667eea/ffffff?text=Report+Generation",
+        "https://placehold.co/800x600/667eea/ffffff?text=Grade+Upload",
+      ],
     },
     {
       title: "School Report Card Generation System",
@@ -126,8 +171,14 @@ export default function Projects() {
       icon: <ClipboardList className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["React", "Tailwind", "Sequelize", "Node.js"],
-      liveLink: "https://repor",
+      liveLink: "#",
       githubLink: "https://github.com/BCEESAY10/report-portal-frontend",
+      isPrivate: false,
+      screenshots: [
+        "https://placehold.co/800x600/667eea/ffffff?text=Dashboard+View",
+        "https://placehold.co/800x600/667eea/ffffff?text=Report+Generation",
+        "https://placehold.co/800x600/667eea/ffffff?text=Grade+Upload",
+      ],
     },
   ];
 
@@ -146,6 +197,24 @@ export default function Projects() {
     activeFilter === "all"
       ? projects
       : projects.filter((project) => project.tags.includes(activeFilter));
+
+  const handleViewDemo = (project) => {
+    if (project.liveLink === "#") {
+      setSelectedProject(project);
+      setShowModal(true);
+    } else {
+      window.open(project.liveLink, "_blank");
+    }
+  };
+
+  const handleCodeClick = (project, e) => {
+    if (project.isPrivate) {
+      e.preventDefault();
+      alert(
+        "This repository is private. Please contact me for access or more information."
+      );
+    }
+  };
 
   return (
     <div className="min-h-screen py-8 px-4 md:px-8 lg:px-16 bg-transparent dark:from-gray-900 dark:to-gray-800">
@@ -169,7 +238,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Filters */}
-        <div className="flex flex-wrap justify-center mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           {filters.map((filter) => (
             <button
               key={filter.id}
@@ -200,7 +269,7 @@ export default function Projects() {
                 className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 {/* Project Image */}
                 <div className="relative h-auto overflow-hidden">
-                  <div className="relative flex items-center justify-center">
+                  <div className="relative flex items-center justify-center py-8">
                     {project.icon}
                     {project.featured && (
                       <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
@@ -215,7 +284,7 @@ export default function Projects() {
                   <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
                     {project.description}
                   </p>
 
@@ -224,7 +293,7 @@ export default function Projects() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm">
+                        className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-xs">
                         {tech}
                       </span>
                     ))}
@@ -232,28 +301,51 @@ export default function Projects() {
 
                   {/* Links */}
                   <div className="flex gap-4">
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    {project.isPrivate ? (
+                      <button
+                        onClick={(e) => handleCodeClick(project, e)}
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                        <Lock className="w-5 h-5" />
+                        <span className="text-sm">Private</span>
+                      </button>
+                    ) : (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                        <Github className="w-5 h-5" />
+                        <span className="text-sm">Code</span>
+                      </a>
+                    )}
+                    <button
+                      onClick={() => handleViewDemo(project)}
                       className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
-                      <Github className="w-5 h-5" />
-                      Code
-                    </a>
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
-                      <ExternalLink className="w-5 h-5" />
-                      Live Demo
-                    </a>
+                      {project.liveLink === "#" ? (
+                        <>
+                          <Eye className="w-5 h-5" />
+                          <span className="text-sm">View Demo</span>
+                        </>
+                      ) : (
+                        <>
+                          <ExternalLink className="w-5 h-5" />
+                          <span className="text-sm">Live Demo</span>
+                        </>
+                      )}
+                    </button>
                   </div>
                 </div>
               </motion.div>
             ))}
           </motion.div>
         </AnimatePresence>
+
+        {/* Demo Modal */}
+        <DemoModal
+          showModal={showModal}
+          selectedProject={selectedProject}
+          setShowModal={setShowModal}
+        />
 
         {/* Decorative Elements */}
         <div className="fixed -z-10 top-1/4 right-0 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob" />
