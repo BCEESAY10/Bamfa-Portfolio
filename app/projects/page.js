@@ -11,13 +11,10 @@ import {
   Bot,
   ShoppingCart,
   MessageCircle,
-  CheckSquare,
   ClipboardList,
   Hospital,
   Monitor,
   Lock,
-  X,
-  Image as ImageIcon,
   Eye,
 } from "lucide-react";
 import DemoModal from "@/components/modals/DemoModal";

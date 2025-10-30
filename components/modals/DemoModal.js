@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, Image as ImageIcon } from "lucide-react";
 
 const DemoModal = ({ showModal, selectedProject, setShowModal }) => {
   return (
