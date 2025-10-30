@@ -1,0 +1,77 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="150" fill="url(#accent-gradient)" opacity="0.4"/>
+  <circle cx="1100" cy="530" r="180" fill="url(#accent-gradient)" opacity="0.4"/>
+  <circle cx="950" cy="150" r="100" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- Decorative code brackets -->
+  <text x="80" y="150" font-family="'Courier New', monospace" font-size="120" fill="#ffffff" opacity="0.15" font-weight="bold">&lt;/&gt;</text>
+  
+  <!-- Main content container -->
+  <g transform="translate(100, 200)">
+    <!-- Name -->
+    <text x="0" y="0" font-family="'Arial', sans-serif" font-size="72" font-weight="bold" fill="#ffffff" filter="url(#glow)">
+      Bamfa Ceesay
+    </text>
+    
+    <!-- Title/Role -->
+    <text x="0" y="70" font-family="'Arial', sans-serif" font-size="42" fill="#ffffff" opacity="0.95">
+      Aspiring Software Developer
+    </text>
+    
+    <!-- Divider line -->
+    <rect x="0" y="100" width="400" height="4" fill="#ffffff" opacity="0.8" rx="2"/>
+    
+    <!-- Tech stack tags -->
+    <g transform="translate(0, 140)">
+      <!-- React -->
+      <rect x="0" y="0" width="120" height="45" fill="#ffffff" opacity="0.2" rx="22.5"/>
+      <text x="60" y="30" font-family="'Arial', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">React</text>
+      
+      <!-- Node.js -->
+      <rect x="140" y="0" width="130" height="45" fill="#ffffff" opacity="0.2" rx="22.5"/>
+      <text x="205" y="30" font-family="'Arial', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">Node.js</text>
+      
+      <!-- Next.js -->
+      <rect x="290" y="0" width="130" height="45" fill="#ffffff" opacity="0.2" rx="22.5"/>
+      <text x="355" y="30" font-family="'Arial', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">Next.js</text>
+      
+      <!-- MySQL -->
+      <rect x="440" y="0" width="170" height="45" fill="#ffffff" opacity="0.2" rx="22.5"/>
+      <text x="525" y="30" font-family="'Arial', sans-serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="600">MySQL</text>
+    </g>
+    
+    <!-- Portfolio URL -->
+    <text x="0" y="250" font-family="'Arial', sans-serif" font-size="28" fill="#ffffff" opacity="0.9">
+      https://bamfa-portfolio.vercel.app
+    </text>
+  </g>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="600" width="1200" height="30" fill="#ffffff" opacity="0.1"/>
+</svg>
