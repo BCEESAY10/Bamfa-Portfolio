@@ -147,18 +147,18 @@ export default function Projects() {
     {
       title: "Patients Record System",
       description:
-        "A patients record management system build for Munaff Clinic to keep bio data and clinic transactions of patients.",
+        "A patients record management system build for Dental Clinics to keep bio data and clinic transactions of patients.",
       icon: <Hospital className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
       tech: ["React", "Tailwind", "Sequelize", "Node.js"],
-      liveLink: "#",
+      liveLink: "https://dental-demo-frontend.vercel.app",
       githubLink: "#",
       featured: true,
       isPrivate: true,
       screenshots: [
-        "https://placehold.co/800x600/667eea/ffffff?text=Dashboard+View",
-        "https://placehold.co/800x600/667eea/ffffff?text=Report+Generation",
-        "https://placehold.co/800x600/667eea/ffffff?text=Grade+Upload",
+        "/images/dashboard-1.png",
+        "/images/dashboard-2.png",
+        "/images/reconcilliation.png",
       ],
     },
     {
