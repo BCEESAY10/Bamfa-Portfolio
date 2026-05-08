@@ -60,7 +60,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-gray-600 dark:text-gray-300 text-lg max-w-xl mx-auto md:mx-0">
-            A trained Product Engineer and an aspiring software developer
+            A BSc Computer Science graduate and an aspiring software developer
             fascinated by frontend development and beautiful designs. I
             transform ideas into elegant, user-friendly digital experiences.
           </motion.p>
