@@ -150,7 +150,7 @@ export default function Projects() {
         "A patients record management system build for Dental Clinics to keep bio data and clinic transactions of patients.",
       icon: <Hospital className="w-16 h-16 mx-auto text-primary" />,
       tags: ["fullstack"],
-      tech: ["React", "Tailwind", "Sequelize", "Node.js"],
+      tech: ["React", "Tailwind", "Mysql", "Sequelize", "Node.js"],
       liveLink: "https://dental-demo-frontend.vercel.app",
       githubLink: "#",
       featured: true,
@@ -225,7 +225,7 @@ export default function Projects() {
     if (project.isPrivate) {
       e.preventDefault();
       alert(
-        "This repository is private. Please contact me for access or more information."
+        "This repository is private. Please contact me for access or more information.",
       );
     }
   };
